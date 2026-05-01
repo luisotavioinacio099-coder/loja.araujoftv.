@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f9fafb;
-    color: #1e1e2f;
+    background-color: #f8f9fc;
+    color: #1a1f2e;
     scroll-behavior: smooth;
 }
 
@@ -17,14 +17,14 @@ body {
     padding: 0 24px;
 }
 
-/* NAVBAR */
+/* NAVBAR - PROFISSIONAL */
 .navbar {
-    background: #0a0a0f;
+    background: #0f1117;
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
 .navbar .container {
@@ -35,15 +35,15 @@ body {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #0084ff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2563eb;
     letter-spacing: -0.5px;
 }
 
 .logo span {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .nav-links {
@@ -53,28 +53,28 @@ body {
 }
 
 .nav-links a {
-    color: #f1f5f9;
+    color: #e2e8f0;
     text-decoration: none;
     font-weight: 500;
     transition: 0.2s;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .nav-links a:hover {
-    color: #0084ff;
+    color: #3b82f6;
     transform: translateY(-2px);
 }
 
 .menu-icon {
     display: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: white;
     cursor: pointer;
 }
 
-/* HERO */
+/* HERO - PROFISSIONAL */
 .hero {
-    background: linear-gradient(135deg, #0e0e1a 0%, #1a1a2e 100%);
+    background: linear-gradient(110deg, #0f1117 0%, #1a1f2e 100%);
     color: white;
     padding: 3rem 0 4rem;
 }
@@ -91,41 +91,42 @@ body {
 }
 
 .hero-content h2 {
-    font-size: 3rem;
-    font-weight: 800;
+    font-size: 2.8rem;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.2rem;
 }
 
 .hero-content h2 span {
-    color: #0084ff;
+    color: #3b82f6;
 }
 
 .hero-content p {
-    font-size: 1.1rem;
-    opacity: 0.9;
+    font-size: 1rem;
+    opacity: 0.85;
     margin-bottom: 2rem;
     line-height: 1.5;
+    color: #cbd5e1;
 }
 
 .btn-primary {
-    background: #0084ff;
+    background: #2563eb;
     border: none;
-    padding: 0.9rem 2.2rem;
+    padding: 0.85rem 2rem;
     border-radius: 40px;
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
     color: white;
     cursor: pointer;
     transition: all 0.2s;
     display: inline-block;
-    box-shadow: 0 5px 12px rgba(0,132,255,0.3);
+    box-shadow: 0 4px 12px rgba(37,99,235,0.3);
     text-decoration: none;
 }
 
 .btn-primary:hover {
-    background: #0066cc;
-    transform: translateY(-3px);
+    background: #1d4ed8;
+    transform: translateY(-2px);
 }
 
 .hero-image {
@@ -136,8 +137,8 @@ body {
 
 .hero-image img {
     max-width: 85%;
-    border-radius: 32px;
-    filter: drop-shadow(0 20px 25px -5px rgba(0,0,0,0.5));
+    border-radius: 28px;
+    filter: drop-shadow(0 20px 25px -5px rgba(0,0,0,0.4));
 }
 
 /* SEÇÃO PRODUTOS */
@@ -147,15 +148,16 @@ body {
 
 .section-title {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    color: #1a1f2e;
 }
 
 .underline {
-    width: 90px;
-    height: 4px;
-    background: #0084ff;
+    width: 70px;
+    height: 3px;
+    background: #2563eb;
     margin: 0 auto 2rem auto;
     border-radius: 4px;
 }
@@ -169,22 +171,24 @@ body {
 
 .product-card {
     background: white;
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
-    transition: all 0.25s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #edf2f7;
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.12);
+    border-color: #e2e8f0;
 }
 
 .product-img {
     width: 100%;
     height: 280px;
     object-fit: cover;
-    background: #f0f2f5;
+    background: #f1f5f9;
 }
 
 .product-info {
@@ -192,22 +196,23 @@ body {
 }
 
 .product-name {
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
     margin-bottom: 0.4rem;
+    color: #1e293b;
 }
 
 .rating {
-    color: #f5b042;
+    color: #f59e0b;
     margin: 6px 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 2px;
 }
 
 .price {
-    font-weight: 800;
-    font-size: 1.3rem;
-    color: #0084ff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #2563eb;
     margin: 8px 0;
 }
 
@@ -218,7 +223,7 @@ body {
     padding: 0.7rem;
     border-radius: 40px;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: white;
     cursor: pointer;
     transition: all 0.2s;
@@ -236,10 +241,10 @@ body {
 
 /* BANNER EXCLUSIVO */
 .banner-exclusive {
-    background: #0f172a;
+    background: #0f1117;
     color: white;
     margin: 2rem 0;
-    border-radius: 40px;
+    border-radius: 28px;
     overflow: hidden;
 }
 
@@ -256,8 +261,14 @@ body {
 }
 
 .banner-text h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.banner-text p {
+    color: #94a3b8;
+    line-height: 1.5;
 }
 
 .banner-text button {
@@ -270,8 +281,8 @@ body {
 }
 
 .banner-img img {
-    max-width: 280px;
-    border-radius: 24px;
+    max-width: 260px;
+    border-radius: 20px;
 }
 
 /* DEPOIMENTOS */
@@ -285,30 +296,32 @@ body {
 
 .testimonial-card {
     background: white;
-    border-radius: 28px;
+    border-radius: 24px;
     padding: 2rem 1.5rem;
     text-align: center;
     flex: 1;
     min-width: 240px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.05);
     transition: 0.2s;
+    border: 1px solid #edf2f7;
 }
 
 .testimonial-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
 }
 
 .quote {
-    font-size: 3rem;
-    color: #0084ff;
-    font-weight: 800;
+    font-size: 2.8rem;
+    color: #2563eb;
+    font-weight: 700;
     line-height: 1;
 }
 
 /* FOOTER */
 footer {
-    background: #0a0a0f;
-    color: #a0aec0;
+    background: #0f1117;
+    color: #94a3b8;
     padding: 3rem 0 1.5rem;
     margin-top: 2rem;
 }
@@ -322,7 +335,14 @@ footer {
 }
 
 .footer-col p, .footer-col ul li a {
-    color: #a0aec0;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .social-icons {
@@ -334,8 +354,8 @@ footer {
 .social-icons a {
     color: white;
     background: #1e293b;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -345,7 +365,7 @@ footer {
 }
 
 .social-icons a:hover {
-    background: #0084ff;
+    background: #2563eb;
     transform: scale(1.05);
 }
 
@@ -353,29 +373,29 @@ footer {
     text-align: center;
     border-top: 1px solid #1e293b;
     padding-top: 2rem;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 /* ÍCONES FLUTUANTES */
 .whatsapp-float {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 20px;
+    right: 20px;
     background: #25D366;
-    width: 55px;
-    height: 55px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
     transition: 0.2s;
     z-index: 99;
     text-decoration: none;
 }
 
 .whatsapp-float i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -385,23 +405,23 @@ footer {
 
 .instagram-float {
     position: fixed;
-    bottom: 95px;
-    right: 25px;
+    bottom: 85px;
+    right: 20px;
     background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
-    width: 55px;
-    height: 55px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
     transition: 0.2s;
     z-index: 99;
     text-decoration: none;
 }
 
 .instagram-float i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -409,17 +429,25 @@ footer {
     transform: scale(1.07);
 }
 
-/* RESPONSIVIDADE */
+/* ============================================= */
+/* RESPONSIVO PARA TODOS OS CELULARES (320px até 800px) */
+/* ============================================= */
+
+/* Tablet e Celulares maiores (max-width: 800px) */
 @media (max-width: 800px) {
+    .container {
+        padding: 0 20px;
+    }
+    
     .nav-links {
         display: none;
         width: 100%;
         flex-direction: column;
-        background: #0a0a0f;
+        background: #0f1117;
         padding: 1rem;
         margin-top: 1rem;
-        border-radius: 20px;
-        gap: 1rem;
+        border-radius: 16px;
+        gap: 0.8rem;
     }
     
     .nav-links.show {
@@ -430,12 +458,21 @@ footer {
         display: block;
     }
     
+    .nav-links li {
+        text-align: center;
+        padding: 0.5rem;
+    }
+    
     .hero-content h2 {
         font-size: 2rem;
     }
     
+    .hero-grid {
+        gap: 2rem;
+    }
+    
     .products-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.5rem;
     }
     
     .banner-inner {
@@ -447,6 +484,7 @@ footer {
     .footer-grid {
         flex-direction: column;
         text-align: center;
+        gap: 1.5rem;
     }
     
     .social-icons {
@@ -454,9 +492,239 @@ footer {
     }
 }
 
-@media (max-width: 550px) {
+/* Celulares médios (max-width: 600px) */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    .hero {
+        padding: 2rem 0 3rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary {
+        padding: 0.7rem 1.6rem;
+        font-size: 0.85rem;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
     .products-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .product-img {
+        height: 180px;
+    }
+    
+    .product-name {
+        font-size: 0.9rem;
+    }
+    
+    .rating {
+        font-size: 0.7rem;
+    }
+    
+    .price {
+        font-size: 1rem;
+    }
+    
+    .btn-whatsapp-produto {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+    
+    .banner-text h3 {
+        font-size: 1.4rem;
+    }
+    
+    .banner-text p {
+        font-size: 0.85rem;
+    }
+    
+    .banner-img img {
+        max-width: 200px;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem 1rem;
+        min-width: 200px;
+    }
+    
+    .testimonial-card p {
+        font-size: 0.85rem;
+    }
+    
+    .quote {
+        font-size: 2rem;
+    }
+    
+    .footer-col p, .footer-col ul li a {
+        font-size: 0.8rem;
+    }
+    
+    .whatsapp-float, .instagram-float {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .whatsapp-float i, .instagram-float i {
+        font-size: 1.5rem;
+    }
+    
+    .instagram-float {
+        bottom: 75px;
+    }
+}
+
+/* Celulares pequenos (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 14px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .product-img {
+        height: 160px;
+    }
+    
+    .product-info {
+        padding: 0.8rem;
+    }
+    
+    .product-name {
+        font-size: 0.85rem;
+    }
+    
+    .price {
+        font-size: 0.9rem;
+    }
+    
+    .btn-whatsapp-produto {
+        font-size: 0.65rem;
+        padding: 0.45rem;
+    }
+    
+    .banner-text h3 {
+        font-size: 1.2rem;
+    }
+    
+    .copyright {
+        font-size: 0.7rem;
+    }
+}
+
+/* Celulares muito pequenos (iPhone SE 1ª gen, max-width: 375px) */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.75rem;
+    }
+    
+    .btn-primary {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .product-img {
+        height: 140px;
+    }
+    
+    .product-name {
+        font-size: 0.8rem;
+    }
+    
+    .rating {
+        font-size: 0.65rem;
+    }
+    
+    .price {
+        font-size: 0.85rem;
+    }
+    
+    .btn-whatsapp-produto {
+        font-size: 0.6rem;
+        padding: 0.4rem;
+    }
+    
+    .banner-text h3 {
+        font-size: 1.1rem;
+    }
+    
+    .banner-text p {
+        font-size: 0.75rem;
+    }
+    
+    .testimonial-card {
+        padding: 1rem;
+    }
+    
+    .testimonial-card p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Celulares extra pequenos (max-width: 320px) */
+@media (max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .logo {
+        font-size: 1rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
     
@@ -465,10 +733,23 @@ footer {
     }
     
     .section-title {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     
-    .banner-text h3 {
-        font-size: 1.4rem;
+    .banner-img img {
+        max-width: 160px;
+    }
+    
+    .whatsapp-float, .instagram-float {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .whatsapp-float i, .instagram-float i {
+        font-size: 1.3rem;
+    }
+    
+    .instagram-float {
+        bottom: 70px;
     }
 }
