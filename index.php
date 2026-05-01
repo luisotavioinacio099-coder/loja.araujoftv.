@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -26,10 +26,7 @@
                 </ul>
             </nav>
 
-            <div class="nav-icon-conteiner">
-                <img src="images/logo 5.jpeg">
-                <img src="images/bg branco.jpeg" class="menu-button">
-            </div>
+           
         </div>
     </div>
 
@@ -56,24 +53,14 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
-        <!-- LOGOS -->
-        <div class="gray-background">
-            <div class="page-inner-content">
-                <div class="cols cols-3">
-                    <img src="images/logo 1.jpeg">
-                    <img src="images/logo 2.jpeg">
-                    <img src="images/logo 4.jpeg">
-                </div>
-            </div>
-        </div>
 
         <!-- PRODUTOS SELECIONADOS -->
         <div class="page-inner-content">
             <h3 class="section-title">Produtos Selecionado</h3>
             <div class="subtitle-underline"></div>
 
+            
             <a href="produto_1.html" title="">
-                <div class="cols cols-4">
                     <div class="product">
                         <img src="images/bg branco.jpeg" id="produto_1">
                         <p class="product-name">Kit Big Wolf Branco</p>
@@ -252,7 +239,7 @@
         <hr class="page-inner-content">
 
         <div class="page-inner-content copyright">
-            <p>copyright 2025 - Luis Otavio - Todos os Direitos Reservados</p>
+            <p>copyright 2026 - Luis Otavio - Todos os Direitos Reservados</p>
         </div>
 
     </footer>
