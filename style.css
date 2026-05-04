@@ -17,7 +17,7 @@ body {
     padding: 0 24px;
 }
 
-/* NAVBAR - PROFISSIONAL */
+/* NAVBAR */
 .navbar {
     background: #0f1117;
     padding: 1rem 0;
@@ -72,7 +72,25 @@ body {
     cursor: pointer;
 }
 
-/* HERO - PROFISSIONAL */
+/* SELO ENTREGA BRASIL */
+.delivery-badge {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.delivery-badge i {
+    font-size: 1rem;
+}
+
+/* HERO */
 .hero {
     background: linear-gradient(110deg, #0f1117 0%, #1a1f2e 100%);
     color: white;
@@ -141,7 +159,7 @@ body {
     filter: drop-shadow(0 20px 25px -5px rgba(0,0,0,0.4));
 }
 
-/* SEÇÃO PRODUTOS */
+/* PRODUTOS */
 .section {
     padding: 4rem 0;
 }
@@ -176,6 +194,7 @@ body {
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     border: 1px solid #edf2f7;
+    cursor: pointer;
 }
 
 .product-card:hover {
@@ -214,29 +233,6 @@ body {
     font-size: 1.2rem;
     color: #2563eb;
     margin: 8px 0;
-}
-
-.btn-whatsapp-produto {
-    background: #25D366;
-    border: none;
-    width: 100%;
-    padding: 0.7rem;
-    border-radius: 40px;
-    font-weight: 600;
-    font-size: 0.85rem;
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s;
-    margin-top: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.btn-whatsapp-produto:hover {
-    background: #1da05a;
-    transform: scale(1.02);
 }
 
 /* BANNER EXCLUSIVO */
@@ -337,6 +333,20 @@ footer {
 .footer-col p, .footer-col ul li a {
     color: #94a3b8;
     font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.footer-col ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a:hover {
+    color: #3b82f6;
 }
 
 .footer-col h4 {
@@ -374,6 +384,180 @@ footer {
     border-top: 1px solid #1e293b;
     padding-top: 2rem;
     font-size: 0.8rem;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 28px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-close {
+    position: sticky;
+    top: 15px;
+    right: 25px;
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #1e293b;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    margin: 10px 15px 0 0;
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.modal-images {
+    flex: 1;
+    min-width: 250px;
+}
+
+.modal-main-image {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.modal-thumbnails {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.thumbnail:hover {
+    border-color: #2563eb;
+    transform: scale(1.05);
+}
+
+.modal-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.modal-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #1a1f2e;
+}
+
+.modal-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin: 1rem 0;
+}
+
+.size-selector {
+    margin: 1.5rem 0;
+}
+
+.size-selector label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.size-options {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.size-btn {
+    width: 55px;
+    padding: 0.7rem;
+    border: 2px solid #e2e8f0;
+    background: white;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.size-btn:hover {
+    border-color: #2563eb;
+    background: #f0f9ff;
+}
+
+.size-btn.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.btn-whatsapp-modal {
+    background: #25D366;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.btn-whatsapp-modal:hover {
+    background: #1da05a;
+    transform: scale(1.02);
+}
+
+.delivery-info {
+    color: #10b981;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.8rem;
+    background: #f0fdf4;
+    border-radius: 12px;
 }
 
 /* ÍCONES FLUTUANTES */
@@ -429,11 +613,7 @@ footer {
     transform: scale(1.07);
 }
 
-/* ============================================= */
-/* RESPONSIVO PARA TODOS OS CELULARES (320px até 800px) */
-/* ============================================= */
-
-/* Tablet e Celulares maiores (max-width: 800px) */
+/* RESPONSIVIDADE CELULARES */
 @media (max-width: 800px) {
     .container {
         padding: 0 20px;
@@ -458,21 +638,8 @@ footer {
         display: block;
     }
     
-    .nav-links li {
-        text-align: center;
-        padding: 0.5rem;
-    }
-    
     .hero-content h2 {
         font-size: 2rem;
-    }
-    
-    .hero-grid {
-        gap: 2rem;
-    }
-    
-    .products-grid {
-        gap: 1.5rem;
     }
     
     .banner-inner {
@@ -490,9 +657,12 @@ footer {
     .social-icons {
         justify-content: center;
     }
+    
+    .modal-body {
+        flex-direction: column;
+    }
 }
 
-/* Celulares médios (max-width: 600px) */
 @media (max-width: 600px) {
     .container {
         padding: 0 16px;
@@ -510,23 +680,6 @@ footer {
         font-size: 1.6rem;
     }
     
-    .hero-content p {
-        font-size: 0.9rem;
-    }
-    
-    .btn-primary {
-        padding: 0.7rem 1.6rem;
-        font-size: 0.85rem;
-    }
-    
-    .section {
-        padding: 3rem 0;
-    }
-    
-    .section-title {
-        font-size: 1.6rem;
-    }
-    
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -540,216 +693,53 @@ footer {
         font-size: 0.9rem;
     }
     
-    .rating {
-        font-size: 0.7rem;
-    }
-    
     .price {
         font-size: 1rem;
     }
     
-    .btn-whatsapp-produto {
-        font-size: 0.7rem;
+    .modal-info h2 {
+        font-size: 1.4rem;
+    }
+    
+    .modal-price {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .product-img {
+        height: 150px;
+    }
+    
+    .thumbnail {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .size-btn {
+        width: 48px;
         padding: 0.5rem;
     }
-    
-    .banner-text h3 {
-        font-size: 1.4rem;
-    }
-    
-    .banner-text p {
-        font-size: 0.85rem;
-    }
-    
-    .banner-img img {
-        max-width: 200px;
-    }
-    
-    .testimonial-card {
-        padding: 1.5rem 1rem;
-        min-width: 200px;
-    }
-    
-    .testimonial-card p {
-        font-size: 0.85rem;
-    }
-    
-    .quote {
-        font-size: 2rem;
-    }
-    
-    .footer-col p, .footer-col ul li a {
-        font-size: 0.8rem;
-    }
-    
-    .whatsapp-float, .instagram-float {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .whatsapp-float i, .instagram-float i {
-        font-size: 1.5rem;
-    }
-    
-    .instagram-float {
-        bottom: 75px;
-    }
 }
 
-/* Celulares pequenos (max-width: 480px) */
-@media (max-width: 480px) {
-    .container {
-        padding: 0 14px;
-    }
-    
-    .hero-content h2 {
-        font-size: 1.4rem;
-    }
-    
-    .hero-content p {
-        font-size: 0.8rem;
-    }
-    
-    .section-title {
-        font-size: 1.4rem;
-    }
-    
-    .product-img {
-        height: 160px;
-    }
-    
-    .product-info {
-        padding: 0.8rem;
-    }
-    
-    .product-name {
-        font-size: 0.85rem;
-    }
-    
-    .price {
-        font-size: 0.9rem;
-    }
-    
-    .btn-whatsapp-produto {
-        font-size: 0.65rem;
-        padding: 0.45rem;
-    }
-    
-    .banner-text h3 {
-        font-size: 1.2rem;
-    }
-    
-    .copyright {
-        font-size: 0.7rem;
-    }
-}
-
-/* Celulares muito pequenos (iPhone SE 1ª gen, max-width: 375px) */
 @media (max-width: 375px) {
-    .container {
-        padding: 0 12px;
-    }
-    
-    .logo {
-        font-size: 1.2rem;
-    }
-    
-    .hero-content h2 {
-        font-size: 1.3rem;
-    }
-    
-    .hero-content p {
-        font-size: 0.75rem;
-    }
-    
-    .btn-primary {
-        padding: 0.6rem 1.4rem;
-        font-size: 0.8rem;
-    }
-    
-    .section-title {
-        font-size: 1.3rem;
-    }
-    
-    .product-img {
-        height: 140px;
+    .products-grid {
+        gap: 0.8rem;
     }
     
     .product-name {
         font-size: 0.8rem;
     }
     
-    .rating {
-        font-size: 0.65rem;
-    }
-    
     .price {
         font-size: 0.85rem;
-    }
-    
-    .btn-whatsapp-produto {
-        font-size: 0.6rem;
-        padding: 0.4rem;
-    }
-    
-    .banner-text h3 {
-        font-size: 1.1rem;
-    }
-    
-    .banner-text p {
-        font-size: 0.75rem;
-    }
-    
-    .testimonial-card {
-        padding: 1rem;
-    }
-    
-    .testimonial-card p {
-        font-size: 0.75rem;
-    }
-}
-
-/* Celulares extra pequenos (max-width: 320px) */
-@media (max-width: 320px) {
-    .container {
-        padding: 0 10px;
-    }
-    
-    .logo {
-        font-size: 1rem;
-    }
-    
-    .hero-content h2 {
-        font-size: 1.2rem;
-    }
-    
-    .products-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .product-img {
-        height: 200px;
-    }
-    
-    .section-title {
-        font-size: 1.2rem;
-    }
-    
-    .banner-img img {
-        max-width: 160px;
-    }
-    
-    .whatsapp-float, .instagram-float {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .whatsapp-float i, .instagram-float i {
-        font-size: 1.3rem;
-    }
-    
-    .instagram-float {
-        bottom: 70px;
     }
 }
