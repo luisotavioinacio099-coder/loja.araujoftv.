@@ -22,7 +22,6 @@
             <li><a href="#produtos">Produtos</a></li>
             <li><a href="#depoimentos">Depoimentos</a></li>
             <li><a href="#contato">Contato</a></li>
-            <li><a href="#contato">Minha Conta</a></li>
         </ul>
     </div>
 </div>
@@ -175,7 +174,7 @@
             <div class="banner-text">
                 <div class="delivery-badge" style="background: #10b981;">
                     <i class="fas fa-truck"></i>
-                    <span>Frete grátis para todo o Brasil</span>
+                    <span>Frete grátis para Sul e Sudeste</span>
                 </div>
                 <h3>🏐 Sucesso nem sempre tem haver com grandeza</h3>
                 <p>Tem haver com consistência. Trabalho duro e consistência superam tudo! Vista nossa camisa e entre em quadra com confiança.</p>
@@ -200,7 +199,7 @@
             </div>
             <div class="testimonial-card">
                 <div class="quote">"</div>
-                <p>Atendimento excelente e produtos de altíssima qualidade. Recomendo demais a Araujo fute volei.</p>
+                <p>Atendimento excelente e produtos de altíssima qualidade. Recomendo demais a ARAUJO FTV.</p>
                 <div class="rating">★★★★★</div>
                 <p style="font-weight: 600; margin-top: 10px;">— Camila Santos</p>
             </div>
@@ -220,7 +219,7 @@
         <div class="footer-grid">
             <div class="footer-col">
                 <h1 class="logo" style="font-size: 1.7rem;">ARAUJO <span style="color:#fff;">FUTVOLEI</span></h1>
-                <p style="margin-top: 0.8rem;">Nosso objetivo é melhorar seu estilo no fute volei.</p>
+                <p style="margin-top: 0.8rem;">Nosso objetivo é melhorar seu estilo no FTV.</p>
                 <div class="delivery-badge" style="background: #059669; margin-top: 1rem;">
                     <i class="fas fa-truck"></i>
                     <span>Entregamos para todo Brasil</span>
@@ -251,27 +250,64 @@
     </div>
 </footer>
 
-<!-- MODAL DO PRODUTO -->
+<!-- MODAL DO PRODUTO - VERSÃO PROFISSIONAL -->
 <div id="productModal" class="modal">
-    <div class="modal-content">
-        <span class="modal-close">&times;</span>
-        <div class="modal-body">
-            <div class="modal-images">
-                <img src="" alt="Produto Principal" id="modalMainImage" class="modal-main-image">
+    <div class="modal-container">
+        <button class="modal-close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="modal-grid">
+            <div class="modal-gallery">
+                <div class="modal-main-image">
+                    <img src="" alt="Produto Principal" id="modalMainImage">
+                </div>
                 <div class="modal-thumbnails">
-                    <img src="" alt="Frente" class="thumbnail" data-img="frente">
-                    <img src="" alt="Costa" class="thumbnail" data-img="costa">
-                    <img src="" alt="Lado Esquerdo" class="thumbnail" data-img="lado1">
-                    <img src="" alt="Lado Direito" class="thumbnail" data-img="lado2">
+                    <div class="thumbnail-item active">
+                        <img src="" alt="Frente" class="thumbnail" data-img="0">
+                        <span>Frente</span>
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="" alt="Costa" class="thumbnail" data-img="1">
+                        <span>Costa</span>
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="" alt="Lado" class="thumbnail" data-img="2">
+                        <span>Lado</span>
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="" alt="Detalhe" class="thumbnail" data-img="3">
+                        <span>Detalhe</span>
+                    </div>
                 </div>
             </div>
-            <div class="modal-info">
-                <h2 id="modalProductName">Kit Big Wolf Branco</h2>
-                <div class="rating">★★★★☆</div>
-                <p class="modal-price" id="modalProductPrice">R$ 0,000.00</p>
+            
+            <div class="modal-details">
+                <div class="modal-header">
+                    <h2 id="modalProductName">Kit Big Wolf Branco</h2>
+                    <div class="modal-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5 (43 avaliações)</span>
+                    </div>
+                </div>
                 
-                <div class="size-selector">
-                    <label>Tamanho disponíveis:</label>
+                <div class="modal-price-container">
+                    <span class="modal-price-label">Preço</span>
+                    <p class="modal-price" id="modalProductPrice">R$ 0,000.00</p>
+                    <span class="modal-installment">ou em até 3x sem juros</span>
+                </div>
+                
+                <div class="modal-divider"></div>
+                
+                <div class="modal-size">
+                    <div class="size-header">
+                        <label>Tamanho</label>
+                        <a href="#" class="size-guide">Guia de medidas</a>
+                    </div>
                     <div class="size-options">
                         <button class="size-btn" data-size="P">P</button>
                         <button class="size-btn" data-size="M">M</button>
@@ -280,12 +316,34 @@
                     </div>
                 </div>
                 
-                <button class="btn-whatsapp-modal" id="modalWhatsBtn">
-                    <i class="fab fa-whatsapp"></i> Comprar via WhatsApp
-                </button>
-                <p class="delivery-info">
-                    <i class="fas fa-truck"></i> Entregamos para todo Brasil
-                </p>
+                <div class="modal-divider"></div>
+                
+                <div class="modal-description">
+                    <h4>Sobre o produto</h4>
+                    <p>Tecido premium com proteção UV, secagem rápida e liberdade de movimento. Ideal para altas performances na areia. Modelagem exclusiva ARAUJO FTV.</p>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="btn-whatsapp-modal" id="modalWhatsBtn">
+                        <i class="fab fa-whatsapp"></i>
+                        Comprar via WhatsApp
+                    </button>
+                </div>
+                
+                <div class="modal-benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Entregamos para todo Brasil</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>Troca fácil em 7 dias</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Produto 100% original</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
