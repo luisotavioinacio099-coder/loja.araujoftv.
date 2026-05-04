@@ -1,6 +1,4 @@
-// ============================================
-// MENU MOBILE
-// ============================================
+// Menu mobile
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
@@ -10,16 +8,14 @@ if (menuToggle) {
     });
 }
 
-// Fechar menu ao clicar em um link
+// Fechar menu ao clicar em link
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('show');
     });
 });
 
-// ============================================
-// BOTÕES "EXPLORAR COLEÇÃO" (CORRIGIDO)
-// ============================================
+// Botões de explorar coleção
 const verProdutosBtn = document.getElementById('verProdutosBtn');
 const ctaExclusivo = document.getElementById('ctaExclusivo');
 
@@ -41,114 +37,105 @@ if (ctaExclusivo) {
     ctaExclusivo.addEventListener('click', scrollToProdutos);
 }
 
-// ============================================
-// MODAL DO PRODUTO (CORRIGIDO)
-// ============================================
+// Modal
 const modal = document.getElementById('productModal');
-const modalClose = document.querySelector('.modal-close');
+const closeBtn = document.querySelector('.modal-close-btn');
 let selectedSize = null;
 
-// Dados dos tamanhos disponíveis
-const tamanhosDisponiveis = ['P', 'M', 'G', 'GG'];
-
-// Função para abrir o modal
+// Abrir modal
 function openModal(produtoNome, produtoPreco, produtoImagem) {
-    // Preencher dados do produto
     document.getElementById('modalProductName').textContent = produtoNome;
     document.getElementById('modalProductPrice').textContent = `R$ ${produtoPreco}`;
     
-    // Configurar imagem principal
     const mainImage = document.getElementById('modalMainImage');
     mainImage.src = produtoImagem;
     mainImage.alt = produtoNome;
     
-    // Configurar miniaturas (usando a mesma imagem por enquanto)
+    // Configurar miniaturas
     const thumbnails = document.querySelectorAll('.thumbnail');
-    const imagensThumb = [produtoImagem, produtoImagem, produtoImagem, produtoImagem];
-    
     thumbnails.forEach((thumb, index) => {
-        if (imagensThumb[index]) {
-            thumb.src = imagensThumb[index];
-            thumb.alt = `${produtoNome} - visão ${index + 1}`;
-        }
+        thumb.src = produtoImagem;
     });
     
-    // Resetar tamanho selecionado
+    // Reset tamanho
     selectedSize = null;
     document.querySelectorAll('.size-btn').forEach(btn => {
         btn.classList.remove('active');
     });
     
-    // Armazenar dados no modal para usar no WhatsApp
+    // Reset thumbnail active
+    document.querySelectorAll('.thumbnail-item').forEach((item, idx) => {
+        if (idx === 0) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+    
     modal.setAttribute('data-produto', produtoNome);
     modal.setAttribute('data-preco', produtoPreco);
-    modal.setAttribute('data-imagem', produtoImagem);
     
-    // Mostrar modal
     modal.classList.add('show');
-    document.body.style.overflow = 'hidden'; // Travar scroll da página
+    document.body.style.overflow = 'hidden';
 }
 
-// Função para fechar o modal
+// Fechar modal
 function closeModal() {
     modal.classList.remove('show');
-    document.body.style.overflow = ''; // Liberar scroll
+    document.body.style.overflow = '';
 }
 
-// Evento de fechar modal
-if (modalClose) {
-    modalClose.addEventListener('click', closeModal);
+if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
 }
 
-// Fechar modal ao clicar fora do conteúdo
 modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         closeModal();
     }
 });
 
-// Evento para tecla ESC fechar modal
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('show')) {
         closeModal();
     }
 });
 
-// ============================================
-// SELETORES DE TAMANHO (P, M, G, GG)
-// ============================================
+// Tamanhos
 document.querySelectorAll('.size-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-        // Remover active de todos
-        document.querySelectorAll('.size-btn').forEach(b => {
-            b.classList.remove('active');
-        });
-        // Adicionar active no clicado
+        document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         selectedSize = btn.getAttribute('data-size');
     });
 });
 
-// ============================================
-// BOTÃO COMPRAR VIA WHATSAPP NO MODAL
-// ============================================
+// Troca de imagens nas miniaturas
+const thumbnailsItems = document.querySelectorAll('.thumbnail-item');
+const mainImage = document.getElementById('modalMainImage');
+const produtoImagemOriginal = '';
+
+thumbnailsItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        thumbnailsItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        
+        const imgSrc = item.querySelector('.thumbnail').src;
+        mainImage.src = imgSrc;
+    });
+});
+
+// WhatsApp
 const modalWhatsBtn = document.getElementById('modalWhatsBtn');
 const numeroWhatsApp = '5511999999999';
 
 function enviarWhatsApp(nomeProduto, preco, tamanho) {
     let mensagem = `Olá! Gostaria de comprar o produto: *${nomeProduto}*`;
     mensagem += `\n💰 Valor: R$ ${preco}`;
-    
-    if (tamanho) {
-        mensagem += `\n📏 Tamanho : *${tamanho}*`;
-    } else {
-        mensagem += `\n⚠️ Tamanho: *Não selecionado* (por favor, informe)`;
-    }
-    
+    mensagem += tamanho ? `\n📏 Tamanho: *${tamanho}*` : `\n⚠️ Tamanho: *Não selecionado*`;
     mensagem += `\n\n✅ Entregam para todo Brasil?`;
     
-    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
-    window.open(url, '_blank');
+    window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`, '_blank');
 }
 
 if (modalWhatsBtn) {
@@ -165,18 +152,9 @@ if (modalWhatsBtn) {
     });
 }
 
-// ============================================
-// CLIQUE NOS PRODUTOS - ABRIR MODAL (CORRIGIDO)
-// ============================================
-const productCards = document.querySelectorAll('.product-card');
-
-productCards.forEach(card => {
+// Clique nos produtos
+document.querySelectorAll('.product-card').forEach(card => {
     card.addEventListener('click', (e) => {
-        // Impedir que o clique no botão dentro do card dispare duas vezes
-        if (e.target.classList && e.target.classList.contains('btn-whatsapp-produto')) {
-            return;
-        }
-        
         const produtoNome = card.getAttribute('data-produto');
         const produtoPreco = card.getAttribute('data-preco');
         const produtoImagem = card.getAttribute('data-imagem');
@@ -187,9 +165,7 @@ productCards.forEach(card => {
     });
 });
 
-// ============================================
-// BOTÕES WHATSAPP DENTRO DOS CARDS (se existirem)
-// ============================================
+// Botão WhatsApp dentro dos cards (se existir)
 document.querySelectorAll('.btn-whatsapp-produto').forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -197,35 +173,8 @@ document.querySelectorAll('.btn-whatsapp-produto').forEach(btn => {
         const produtoNome = card.getAttribute('data-produto');
         const produtoPreco = card.getAttribute('data-preco');
         
-        // Abrir WhatsApp direto sem modal
-        const mensagem = `Olá! Gostaria de comprar o produto: *${produtoNome}* - R$ ${produtoPreco}`;
-        const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
-        window.open(url, '_blank');
+        window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(`Olá! Gostaria de comprar o produto: *${produtoNome}* - R$ ${produtoPreco}`)}`, '_blank');
     });
 });
 
-// ============================================
-// CONFIGURAR MINIATURAS DO MODAL
-// ============================================
-function setupThumbnails() {
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    const mainImage = document.getElementById('modalMainImage');
-    
-    thumbnails.forEach(thumb => {
-        thumb.addEventListener('click', () => {
-            // Trocar a imagem principal pela miniatura clicada
-            const newSrc = thumb.src;
-            mainImage.src = newSrc;
-            
-            // Remover borda de todos e adicionar no selecionado
-            thumbnails.forEach(t => t.style.borderColor = 'transparent');
-            thumb.style.borderColor = '#2563eb';
-        });
-    });
-}
-
-// Inicializar miniaturas após carregar a página
-document.addEventListener('DOMContentLoaded', () => {
-    setupThumbnails();
-});
-
+console.log('✅ ARAUJO FUTVOLEI - Modal profissional funcionando!');
