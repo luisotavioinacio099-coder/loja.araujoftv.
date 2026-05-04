@@ -140,7 +140,7 @@ function enviarWhatsApp(nomeProduto, preco, tamanho) {
     mensagem += `\n💰 Valor: R$ ${preco}`;
     
     if (tamanho) {
-        mensagem += `\n📏 Tamanho: *${tamanho}*`;
+        mensagem += `\n📏 Tamanho : *${tamanho}*`;
     } else {
         mensagem += `\n⚠️ Tamanho: *Não selecionado* (por favor, informe)`;
     }
@@ -229,4 +229,3 @@ document.addEventListener('DOMContentLoaded', () => {
     setupThumbnails();
 });
 
-console.log('✅ Site ARAUJO FUTVOLEI - Modal e botões funcionando corretamente!');
