@@ -17,7 +17,6 @@ body {
     padding: 0 24px;
 }
 
-/* ========== NAVBAR ========== */
 .navbar {
     background: #0f172a;
     padding: 1rem 0;
@@ -67,11 +66,11 @@ body {
     cursor: pointer;
 }
 
-/* ========== HERO COM IMAGEM DE FUNDO ========== */
+/* HERO COM IMAGEM - AJUSTADA PARA MOSTRAR O ROSTO */
 .hero {
     background-image: url('images/foto.capa.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: center 20%;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
@@ -144,7 +143,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ========== PRODUTOS ========== */
 .section {
     padding: 4rem 0;
 }
@@ -209,10 +207,8 @@ body {
     font-weight: 700;
     font-size: 1.1rem;
     color: #3b82f6;
-    margin-top: 0.3rem;
 }
 
-/* ========== BANNER LARGURA TOTAL ========== */
 .banner-full-width {
     width: 100%;
     background: #0f172a;
@@ -258,7 +254,6 @@ body {
     border-radius: 20px;
 }
 
-/* ========== DEPOIMENTOS ========== */
 .testimonials {
     display: flex;
     flex-wrap: wrap;
@@ -282,7 +277,6 @@ body {
     font-weight: 700;
 }
 
-/* ========== FOOTER ========== */
 footer {
     background: #0f172a;
     color: #94a3b8;
@@ -366,7 +360,6 @@ footer {
     font-size: 0.8rem;
 }
 
-/* ========== MODAL ========== */
 .modal {
     display: none;
     position: fixed;
@@ -418,11 +411,7 @@ footer {
     border: 1px solid #e2e8f0;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 10;
     margin: 15px 15px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .modal-grid {
@@ -437,14 +426,12 @@ footer {
     width: 100%;
     max-height: 350px;
     object-fit: contain;
-    border-radius: 20px;
 }
 
 .modal-thumbnails {
     display: flex;
     gap: 0.8rem;
     justify-content: center;
-    flex-wrap: wrap;
     margin-top: 1rem;
 }
 
@@ -465,83 +452,19 @@ footer {
     border-color: #3b82f6;
 }
 
-.thumbnail-item span {
-    font-size: 0.7rem;
-    display: block;
-    margin-top: 0.3rem;
-    color: #64748b;
-}
-
 .modal-header h2 {
     font-size: 1.6rem;
-    margin-bottom: 0.3rem;
-}
-
-.modal-rating {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.modal-rating i {
-    color: #f59e0b;
-    font-size: 0.85rem;
-}
-
-.modal-price-container {
-    margin: 0.5rem 0;
-}
-
-.modal-price-label {
-    font-size: 0.85rem;
-    color: #64748b;
-    text-transform: uppercase;
 }
 
 .modal-price {
     font-size: 1.8rem;
     font-weight: 800;
     color: #3b82f6;
-    margin: 0.25rem 0;
-}
-
-.modal-installment {
-    font-size: 0.8rem;
-    color: #64748b;
-}
-
-.modal-divider {
-    height: 1px;
-    background: #e2e8f0;
-    margin: 1rem 0;
-}
-
-.modal-size {
-    margin: 0.5rem 0;
-}
-
-.size-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.75rem;
-}
-
-.size-header label {
-    font-weight: 600;
-}
-
-.size-guide {
-    font-size: 0.8rem;
-    color: #3b82f6;
-    text-decoration: none;
 }
 
 .size-options {
     display: flex;
     gap: 0.8rem;
-    flex-wrap: wrap;
     margin: 1rem 0;
 }
 
@@ -553,32 +476,11 @@ footer {
     border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.2s;
-}
-
-.size-btn:hover {
-    border-color: #3b82f6;
-    background: #eff6ff;
 }
 
 .size-btn.active {
     background: #3b82f6;
     color: white;
-    border-color: #3b82f6;
-}
-
-.modal-description {
-    margin: 1rem 0;
-}
-
-.modal-description h4 {
-    margin-bottom: 0.5rem;
-}
-
-.modal-description p {
-    font-size: 0.9rem;
-    color: #475569;
-    line-height: 1.5;
 }
 
 .btn-whatsapp-modal {
@@ -590,17 +492,11 @@ footer {
     font-weight: 700;
     color: white;
     cursor: pointer;
-    transition: 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem 0;
-}
-
-.btn-whatsapp-modal:hover {
-    background: #1da05a;
-    transform: scale(1.02);
 }
 
 .modal-benefits {
@@ -619,10 +515,8 @@ footer {
 
 .benefit-item i {
     color: #10b981;
-    width: 20px;
 }
 
-/* ========== ÍCONES FLUTUANTES ========== */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -641,10 +535,6 @@ footer {
 .whatsapp-float i {
     font-size: 1.8rem;
     color: white;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.07);
 }
 
 .instagram-float {
@@ -667,11 +557,6 @@ footer {
     color: white;
 }
 
-.instagram-float:hover {
-    transform: scale(1.07);
-}
-
-/* ========== RESPONSIVIDADE ========== */
 @media (max-width: 800px) {
     .nav-links {
         display: none;
@@ -702,8 +587,6 @@ footer {
     
     .modal-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 1rem;
     }
     
     .banner-inner {
@@ -734,40 +617,10 @@ footer {
     .section-title {
         font-size: 1.5rem;
     }
-    
-    .banner-text h3 {
-        font-size: 1.3rem;
-    }
 }
 
 @media (max-width: 480px) {
     .product-img {
         height: 150px;
-    }
-    
-    .product-name {
-        font-size: 0.85rem;
-    }
-    
-    .price {
-        font-size: 0.9rem;
-    }
-    
-    .modal-header h2 {
-        font-size: 1.3rem;
-    }
-    
-    .modal-price {
-        font-size: 1.4rem;
-    }
-    
-    .thumbnail-item img {
-        width: 55px;
-        height: 55px;
-    }
-    
-    .size-btn {
-        width: 45px;
-        padding: 0.5rem;
     }
 }
