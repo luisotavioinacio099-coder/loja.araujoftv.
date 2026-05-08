@@ -84,7 +84,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.55);
     z-index: 1;
 }
 
@@ -93,7 +93,7 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    min-height: 550px;
+    min-height: 500px;
     position: relative;
     z-index: 2;
     padding: 3rem 24px;
@@ -335,7 +335,6 @@ footer {
     justify-content: center;
     color: white;
     font-size: 1.4rem;
-    transition: 0.2s;
     text-decoration: none;
 }
 
@@ -353,7 +352,6 @@ footer {
     justify-content: center;
     color: white;
     font-size: 1.4rem;
-    transition: 0.2s;
     text-decoration: none;
 }
 
@@ -467,15 +465,77 @@ footer {
     border-color: #3b82f6;
 }
 
+.thumbnail-item span {
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 0.3rem;
+    color: #64748b;
+}
+
 .modal-header h2 {
     font-size: 1.6rem;
     margin-bottom: 0.3rem;
+}
+
+.modal-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-rating i {
+    color: #f59e0b;
+    font-size: 0.85rem;
+}
+
+.modal-price-container {
+    margin: 0.5rem 0;
+}
+
+.modal-price-label {
+    font-size: 0.85rem;
+    color: #64748b;
+    text-transform: uppercase;
 }
 
 .modal-price {
     font-size: 1.8rem;
     font-weight: 800;
     color: #3b82f6;
+    margin: 0.25rem 0;
+}
+
+.modal-installment {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.modal-divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 1rem 0;
+}
+
+.modal-size {
+    margin: 0.5rem 0;
+}
+
+.size-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.size-header label {
+    font-weight: 600;
+}
+
+.size-guide {
+    font-size: 0.8rem;
+    color: #3b82f6;
+    text-decoration: none;
 }
 
 .size-options {
@@ -493,12 +553,32 @@ footer {
     border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.size-btn:hover {
+    border-color: #3b82f6;
+    background: #eff6ff;
 }
 
 .size-btn.active {
     background: #3b82f6;
     color: white;
     border-color: #3b82f6;
+}
+
+.modal-description {
+    margin: 1rem 0;
+}
+
+.modal-description h4 {
+    margin-bottom: 0.5rem;
+}
+
+.modal-description p {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.5;
 }
 
 .btn-whatsapp-modal {
@@ -510,11 +590,17 @@ footer {
     font-weight: 700;
     color: white;
     cursor: pointer;
+    transition: 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem 0;
+}
+
+.btn-whatsapp-modal:hover {
+    background: #1da05a;
+    transform: scale(1.02);
 }
 
 .modal-benefits {
@@ -533,6 +619,7 @@ footer {
 
 .benefit-item i {
     color: #10b981;
+    width: 20px;
 }
 
 /* ========== ÍCONES FLUTUANTES ========== */
@@ -556,6 +643,10 @@ footer {
     color: white;
 }
 
+.whatsapp-float:hover {
+    transform: scale(1.07);
+}
+
 .instagram-float {
     position: fixed;
     bottom: 85px;
@@ -574,6 +665,10 @@ footer {
 .instagram-float i {
     font-size: 1.8rem;
     color: white;
+}
+
+.instagram-float:hover {
+    transform: scale(1.07);
 }
 
 /* ========== RESPONSIVIDADE ========== */
@@ -597,7 +692,7 @@ footer {
     }
     
     .hero-container {
-        min-height: 450px;
+        min-height: 400px;
         padding: 2rem 24px;
     }
     
@@ -607,6 +702,8 @@ footer {
     
     .modal-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
     }
     
     .banner-inner {
@@ -654,5 +751,23 @@ footer {
     
     .price {
         font-size: 0.9rem;
+    }
+    
+    .modal-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .modal-price {
+        font-size: 1.4rem;
+    }
+    
+    .thumbnail-item img {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .size-btn {
+        width: 45px;
+        padding: 0.5rem;
     }
 }
