@@ -26,30 +26,30 @@
     </div>
 </div>
 
-<!-- HERO -->
+<!-- HERO COM IMAGEM INTEGRADA -->
 <header class="hero">
-    <div class="container hero-grid">
+    <div class="hero-container">
         <div class="hero-content">
             <div class="delivery-badge">
                 <i class="fas fa-truck"></i>
                 <span>Entregamos para todo Brasil</span>
-                <i class="fas fa-map-marker-alt"></i>
             </div>
-            <h2>Vista a Areia com <br><span>Atitude e Estilo</span></h2>
+            <h1>Vista a Areia com <span>Atitude e Estilo</span></h1>
             <button class="btn-primary" id="verProdutosBtn">Explorar Coleção →</button>
         </div>
         <div class="hero-image">
-            <img src="images/bg branco.jpeg" alt="Kit exclusivo ARAUJO FUTVOLEI">
+            <img src="images/foto.capa.jpeg" alt="Kit exclusivo ARAUJO FUTVOLEI">
         </div>
     </div>
 </header>
 
 <main>
-    <!-- PRODUTOS DESTAQUE -->
+    <!-- TODOS OS PRODUTOS JUNTOS -->
     <div class="container section" id="produtos">
-        <h3 class="section-title">Produtos em Destaque</h3>
+        <h3 class="section-title">Nossos Produtos</h3>
         <div class="underline"></div>
         <div class="products-grid">
+            <!-- Produtos em Destaque -->
             <div class="product-card" data-produto="Kit Big Wolf Branco" data-preco="0,000.00" data-imagem="images/bg branco.jpeg">
                 <img src="images/bg branco.jpeg" class="product-img" alt="Kit Big Wolf Branco">
                 <div class="product-info">
@@ -85,14 +85,8 @@
                     <p class="price">R$ 0,000.00</p>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- ÚLTIMOS PRODUTOS -->
-    <div class="container section">
-        <h3 class="section-title">Últimos Produtos</h3>
-        <div class="underline"></div>
-        <div class="products-grid">
+            <!-- Últimos Produtos -->
             <div class="product-card" data-produto="Bola Mikasa" data-preco="0,000.00" data-imagem="images/bola.jpeg">
                 <img src="images/bola.jpeg" class="product-img" alt="Bola Mikasa">
                 <div class="product-info">
@@ -167,20 +161,22 @@
         </div>
     </div>
 
-    <!-- BLOCO EXCLUSIVO -->
-    <div class="container banner-exclusive">
-        <div class="banner-inner">
-            <div class="banner-text">
-                <div class="delivery-badge" style="background: #10b981;">
-                    <i class="fas fa-truck"></i>
-                    <span>Frete grátis para Sul e Sudeste</span>
+    <!-- BLOCO EXCLUSIVO - LARGURA TOTAL -->
+    <div class="banner-full-width">
+        <div class="banner-exclusive">
+            <div class="banner-inner">
+                <div class="banner-text">
+                    <div class="delivery-badge" style="background: #10b981;">
+                        <i class="fas fa-truck"></i>
+                        <span>Frete grátis para Sul e Sudeste</span>
+                    </div>
+                    <h3>🏐 Sucesso nem sempre tem haver com grandeza</h3>
+                    <p>Tem haver com consistência. Trabalho duro e consistência superam tudo! Vista nossa camisa e entre em quadra com confiança.</p>
+                    <button class="btn-primary" id="ctaExclusivo">Ver Coleção →</button>
                 </div>
-                <h3>🏐 Sucesso nem sempre tem haver com grandeza</h3>
-                <p>Tem haver com consistência. Trabalho duro e consistência superam tudo! Vista nossa camisa e entre em quadra com confiança.</p>
-                <button class="btn-primary" id="ctaExclusivo">Ver Coleção →</button>
-            </div>
-            <div class="banner-img">
-                <img src="images/bg preto.jpeg" alt="Uniforme exclusivo">
+                <div class="banner-img">
+                    <img src="images/bg preto.jpeg" alt="Uniforme exclusivo">
+                </div>
             </div>
         </div>
     </div>
@@ -223,9 +219,13 @@
                     <i class="fas fa-truck"></i>
                     <span>Entregamos para todo Brasil</span>
                 </div>
-                <div class="social-icons">
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <div class="social-icons-footer">
+                    <a href="https://wa.me/5511999999999" target="_blank" class="footer-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="footer-instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
             <div class="footer-col">
@@ -249,7 +249,7 @@
     </div>
 </footer>
 
-<!-- MODAL DO PRODUTO - VERSÃO PROFISSIONAL -->
+<!-- MODAL DO PRODUTO -->
 <div id="productModal" class="modal">
     <div class="modal-container">
         <button class="modal-close-btn">
