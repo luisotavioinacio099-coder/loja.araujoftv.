@@ -17,6 +17,7 @@ body {
     padding: 0 24px;
 }
 
+/* ========== NAVBAR ========== */
 .navbar {
     background: #0f172a;
     padding: 1rem 0;
@@ -66,11 +67,11 @@ body {
     cursor: pointer;
 }
 
-/* HERO COM IMAGEM - AJUSTADA PARA MOSTRAR O ROSTO */
+/* ========== HERO COM IMAGEM ========== */
 .hero {
     background-image: url('images/foto.capa.jpeg');
     background-size: cover;
-    background-position: center 18%;
+    background-position: center 20%;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
@@ -83,7 +84,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -143,6 +144,7 @@ body {
     transform: translateY(-2px);
 }
 
+/* ========== PRODUTOS ========== */
 .section {
     padding: 4rem 0;
 }
@@ -209,6 +211,7 @@ body {
     color: #3b82f6;
 }
 
+/* ========== BANNER ========== */
 .banner-full-width {
     width: 100%;
     background: #0f172a;
@@ -254,6 +257,7 @@ body {
     border-radius: 20px;
 }
 
+/* ========== DEPOIMENTOS ========== */
 .testimonials {
     display: flex;
     flex-wrap: wrap;
@@ -277,6 +281,7 @@ body {
     font-weight: 700;
 }
 
+/* ========== FOOTER ========== */
 footer {
     background: #0f172a;
     color: #94a3b8;
@@ -360,6 +365,7 @@ footer {
     font-size: 0.8rem;
 }
 
+/* ========== MODAL ========== */
 .modal {
     display: none;
     position: fixed;
@@ -517,6 +523,7 @@ footer {
     color: #10b981;
 }
 
+/* ========== ÍCONES FLUTUANTES ========== */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -557,7 +564,12 @@ footer {
     color: white;
 }
 
+/* ========== RESPONSIVIDADE MOBILE ========== */
 @media (max-width: 800px) {
+    .container {
+        padding: 0 20px;
+    }
+    
     .nav-links {
         display: none;
         width: 100%;
@@ -576,13 +588,31 @@ footer {
         display: block;
     }
     
+    /* Ajuste do Hero para mobile */
     .hero-container {
-        min-height: 400px;
-        padding: 2rem 24px;
+        min-height: 450px;
+        padding: 2rem 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
     }
     
     .hero-content h1 {
         font-size: 1.8rem;
+    }
+    
+    .delivery-badge {
+        margin: 0 auto 1rem auto;
+    }
+    
+    /* Ajuste dos produtos para não ficarem grudados */
+    .products-grid {
+        gap: 1rem;
+        padding: 0;
     }
     
     .modal-grid {
@@ -605,22 +635,141 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero-container {
+        min-height: 400px;
+        padding: 1.5rem 16px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    /* CORREÇÃO: Produtos com margem lateral no mobile */
     .products-grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 12px;
+        width: 100%;
     }
     
     .product-img {
-        height: 180px;
+        height: 160px;
+    }
+    
+    .product-info {
+        padding: 0.75rem;
+    }
+    
+    .product-name {
+        font-size: 0.85rem;
+    }
+    
+    .rating {
+        font-size: 0.7rem;
+    }
+    
+    .price {
+        font-size: 0.9rem;
     }
     
     .section-title {
         font-size: 1.5rem;
     }
+    
+    .banner-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .banner-exclusive {
+        padding: 2rem 16px;
+    }
+    
+    .banner-inner {
+        gap: 1.5rem;
+    }
+    
+    .banner-img img {
+        max-width: 200px;
+    }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .hero-container {
+        min-height: 350px;
+        padding: 1rem 12px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.3rem;
+    }
+    
+    .btn-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .delivery-badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+    }
+    
+    /* CORREÇÃO: Mais espaçamento lateral nos produtos */
+    .products-grid {
+        gap: 10px;
+    }
+    
     .product-img {
-        height: 150px;
+        height: 140px;
+    }
+    
+    .product-name {
+        font-size: 0.8rem;
+    }
+    
+    .price {
+        font-size: 0.85rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .testimonial-card {
+        padding: 1rem;
+        min-width: auto;
+    }
+    
+    .testimonial-card p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .products-grid {
+        gap: 8px;
+    }
+    
+    .product-img {
+        height: 130px;
+    }
+    
+    .product-name {
+        font-size: 0.75rem;
+    }
+    
+    .price {
+        font-size: 0.8rem;
     }
 }
