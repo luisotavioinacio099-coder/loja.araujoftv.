@@ -26,7 +26,7 @@
     </div>
 </div>
 
-<!-- HERO COM IMAGEM INTEGRADA -->
+<!-- HERO COM IMAGEM DE FUNDO -->
 <header class="hero">
     <div class="hero-container">
         <div class="hero-content">
@@ -37,19 +37,15 @@
             <h1>Vista a Areia com <span>Atitude e Estilo</span></h1>
             <button class="btn-primary" id="verProdutosBtn">Explorar Coleção →</button>
         </div>
-        <div class="hero-image">
-            <img src="images/foto.capa.jpeg" alt="Kit exclusivo ARAUJO FUTVOLEI">
-        </div>
     </div>
 </header>
 
 <main>
-    <!-- TODOS OS PRODUTOS JUNTOS -->
+    <!-- PRODUTOS -->
     <div class="container section" id="produtos">
         <h3 class="section-title">Nossos Produtos</h3>
         <div class="underline"></div>
         <div class="products-grid">
-            <!-- Produtos em Destaque -->
             <div class="product-card" data-produto="Kit Big Wolf Branco" data-preco="0,000.00" data-imagem="images/bg branco.jpeg">
                 <img src="images/bg branco.jpeg" class="product-img" alt="Kit Big Wolf Branco">
                 <div class="product-info">
@@ -86,7 +82,6 @@
                 </div>
             </div>
 
-            <!-- Últimos Produtos -->
             <div class="product-card" data-produto="Bola Mikasa" data-preco="0,000.00" data-imagem="images/bola.jpeg">
                 <img src="images/bola.jpeg" class="product-img" alt="Bola Mikasa">
                 <div class="product-info">
@@ -161,7 +156,7 @@
         </div>
     </div>
 
-    <!-- BLOCO EXCLUSIVO - LARGURA TOTAL -->
+    <!-- BANNER EXCLUSIVO -->
     <div class="banner-full-width">
         <div class="banner-exclusive">
             <div class="banner-inner">
@@ -249,64 +244,38 @@
     </div>
 </footer>
 
-<!-- MODAL DO PRODUTO -->
+<!-- MODAL -->
 <div id="productModal" class="modal">
     <div class="modal-container">
-        <button class="modal-close-btn">
-            <i class="fas fa-times"></i>
-        </button>
-        
+        <button class="modal-close-btn"><i class="fas fa-times"></i></button>
         <div class="modal-grid">
             <div class="modal-gallery">
                 <div class="modal-main-image">
-                    <img src="" alt="Produto Principal" id="modalMainImage">
+                    <img src="" alt="Produto" id="modalMainImage">
                 </div>
                 <div class="modal-thumbnails">
-                    <div class="thumbnail-item active">
-                        <img src="" alt="Frente" class="thumbnail" data-img="0">
-                        <span>Frente</span>
-                    </div>
-                    <div class="thumbnail-item">
-                        <img src="" alt="Costa" class="thumbnail" data-img="1">
-                        <span>Costa</span>
-                    </div>
-                    <div class="thumbnail-item">
-                        <img src="" alt="Lado" class="thumbnail" data-img="2">
-                        <span>Lado</span>
-                    </div>
-                    <div class="thumbnail-item">
-                        <img src="" alt="Detalhe" class="thumbnail" data-img="3">
-                        <span>Detalhe</span>
-                    </div>
+                    <div class="thumbnail-item active"><img src="" alt="Frente" class="thumbnail"><span>Frente</span></div>
+                    <div class="thumbnail-item"><img src="" alt="Costa" class="thumbnail"><span>Costa</span></div>
+                    <div class="thumbnail-item"><img src="" alt="Lado" class="thumbnail"><span>Lado</span></div>
+                    <div class="thumbnail-item"><img src="" alt="Detalhe" class="thumbnail"><span>Detalhe</span></div>
                 </div>
             </div>
-            
             <div class="modal-details">
                 <div class="modal-header">
                     <h2 id="modalProductName">Kit Big Wolf Branco</h2>
                     <div class="modal-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                         <span>4.5 (43 avaliações)</span>
                     </div>
                 </div>
-                
                 <div class="modal-price-container">
                     <span class="modal-price-label">Preço</span>
                     <p class="modal-price" id="modalProductPrice">R$ 0,000.00</p>
                     <span class="modal-installment">ou em até 3x sem juros</span>
                 </div>
-                
                 <div class="modal-divider"></div>
-                
                 <div class="modal-size">
-                    <div class="size-header">
-                        <label>Tamanho</label>
-                        <a href="#" class="size-guide">Guia de medidas</a>
-                    </div>
+                    <div class="size-header"><label>Tamanho</label><a href="#" class="size-guide">Guia de medidas</a></div>
                     <div class="size-options">
                         <button class="size-btn" data-size="P">P</button>
                         <button class="size-btn" data-size="M">M</button>
@@ -314,34 +283,16 @@
                         <button class="size-btn" data-size="GG">GG</button>
                     </div>
                 </div>
-                
                 <div class="modal-divider"></div>
-                
                 <div class="modal-description">
                     <h4>Sobre o produto</h4>
-                    <p>Tecido premium com proteção UV, secagem rápida e liberdade de movimento. Ideal para altas performances na areia. Modelagem exclusiva ARAUJO FTV.</p>
+                    <p>Tecido premium com proteção UV, secagem rápida e liberdade de movimento. Ideal para altas performances na areia.</p>
                 </div>
-                
-                <div class="modal-actions">
-                    <button class="btn-whatsapp-modal" id="modalWhatsBtn">
-                        <i class="fab fa-whatsapp"></i>
-                        Comprar via WhatsApp
-                    </button>
-                </div>
-                
+                <button class="btn-whatsapp-modal" id="modalWhatsBtn"><i class="fab fa-whatsapp"></i> Comprar via WhatsApp</button>
                 <div class="modal-benefits">
-                    <div class="benefit-item">
-                        <i class="fas fa-truck"></i>
-                        <span>Entregamos para todo Brasil</span>
-                    </div>
-                    <div class="benefit-item">
-                        <i class="fas fa-exchange-alt"></i>
-                        <span>Troca fácil em 7 dias</span>
-                    </div>
-                    <div class="benefit-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Produto 100% original</span>
-                    </div>
+                    <div class="benefit-item"><i class="fas fa-truck"></i><span>Entregamos para todo Brasil</span></div>
+                    <div class="benefit-item"><i class="fas fa-exchange-alt"></i><span>Troca fácil em 7 dias</span></div>
+                    <div class="benefit-item"><i class="fas fa-shield-alt"></i><span>Produto 100% original</span></div>
                 </div>
             </div>
         </div>
@@ -349,13 +300,8 @@
 </div>
 
 <!-- ÍCONES FLUTUANTES -->
-<a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<a href="https://instagram.com" target="_blank" class="instagram-float">
-    <i class="fab fa-instagram"></i>
-</a>
+<a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<a href="https://instagram.com" target="_blank" class="instagram-float"><i class="fab fa-instagram"></i></a>
 
 <script src="script.js"></script>
 </body>
