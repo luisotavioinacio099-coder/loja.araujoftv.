@@ -777,3 +777,22 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+.footer-tiktok {
+    background: #000000;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-tiktok:hover {
+    transform: scale(1.07);
+    background: #161616;
+}
