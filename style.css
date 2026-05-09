@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f5f7fa;
-    color: #1e293b;
+    background-color: #D2B48C; /* Fundo marrom claro (tom de areia/terra) */
+    color: #4a2c12; /* Marrom escuro para textos */
     scroll-behavior: smooth;
 }
 
@@ -17,9 +17,9 @@ body {
     padding: 0 24px;
 }
 
-/* NAVBAR */
+/* NAVBAR - Fundo marrom escuro */
 .navbar {
-    background: #0f172a;
+    background: #3b1e0a; /* Marrom escuro */
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -36,11 +36,11 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #3b82f6;
+    color: #D2B48C; /* Marrom claro */
 }
 
 .logo span {
-    color: #ffffff;
+    color: #ffffff; /* Branco */
 }
 
 .nav-links {
@@ -50,14 +50,14 @@ body {
 }
 
 .nav-links a {
-    color: #e2e8f0;
+    color: #D2B48C; /* Marrom claro */
     text-decoration: none;
     font-weight: 500;
     transition: 0.2s;
 }
 
 .nav-links a:hover {
-    color: #3b82f6;
+    color: #ffffff; /* Branco ao passar mouse */
 }
 
 .menu-icon {
@@ -67,7 +67,7 @@ body {
     cursor: pointer;
 }
 
-/* HERO */
+/* HERO - Overlay marrom */
 .hero {
     background-image: url('images/foto.capa.jpeg');
     background-size: cover;
@@ -84,7 +84,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(59, 30, 10, 0.7); /* Overlay marrom */
     z-index: 1;
 }
 
@@ -112,11 +112,11 @@ body {
 }
 
 .hero-content h1 span {
-    color: #3b82f6;
+    color: #D2B48C; /* Marrom claro */
 }
 
 .delivery-badge {
-    background: #10b981;
+    background: #8B4513; /* Marrom queimado */
     padding: 0.4rem 1rem;
     border-radius: 30px;
     display: inline-flex;
@@ -129,7 +129,7 @@ body {
 }
 
 .btn-primary {
-    background: #3b82f6;
+    background: #8B4513; /* Marrom queimado */
     border: none;
     padding: 0.8rem 2rem;
     border-radius: 40px;
@@ -140,7 +140,7 @@ body {
 }
 
 .btn-primary:hover {
-    background: #2563eb;
+    background: #5c2d0a; /* Marrom mais escuro */
     transform: translateY(-2px);
 }
 
@@ -154,12 +154,13 @@ body {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    color: #3b1e0a; /* Marrom escuro */
 }
 
 .underline {
     width: 70px;
     height: 3px;
-    background: #3b82f6;
+    background: #8B4513; /* Marrom queimado */
     margin: 0 auto 2rem auto;
     border-radius: 3px;
 }
@@ -197,6 +198,7 @@ body {
 .product-name {
     font-weight: 600;
     margin-bottom: 0.3rem;
+    color: #3b1e0a; /* Marrom escuro */
 }
 
 .rating {
@@ -208,7 +210,7 @@ body {
 .price {
     font-weight: 700;
     font-size: 1.1rem;
-    color: #3b82f6;
+    color: #8B4513; /* Marrom queimado */
 }
 
 /* SOBRE */
@@ -221,7 +223,7 @@ body {
 .about-text p {
     margin-bottom: 1.5rem;
     line-height: 1.6;
-    color: #475569;
+    color: #3b1e0a; /* Marrom escuro */
 }
 
 /* POLÍTICAS */
@@ -246,24 +248,25 @@ body {
 
 .policy-card i {
     font-size: 2rem;
-    color: #3b82f6;
+    color: #8B4513; /* Marrom queimado */
     margin-bottom: 1rem;
 }
 
 .policy-card h4 {
     margin-bottom: 0.8rem;
+    color: #3b1e0a;
 }
 
 .policy-card p {
     font-size: 0.85rem;
-    color: #475569;
+    color: #4a2c12;
     line-height: 1.5;
 }
 
 /* BANNER */
 .banner-full-width {
     width: 100%;
-    background: #0f172a;
+    background: #3b1e0a; /* Marrom escuro */
     margin: 2rem 0;
 }
 
@@ -286,12 +289,12 @@ body {
 
 .banner-text h3 {
     font-size: 1.8rem;
-    color: white;
+    color: #D2B48C;
     margin-bottom: 1rem;
 }
 
 .banner-text p {
-    color: #94a3b8;
+    color: #c9a87b;
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -326,14 +329,14 @@ body {
 
 .quote {
     font-size: 2.5rem;
-    color: #3b82f6;
+    color: #8B4513;
     font-weight: 700;
 }
 
 /* FOOTER */
 footer {
-    background: #0f172a;
-    color: #94a3b8;
+    background: #3b1e0a; /* Marrom escuro */
+    color: #c9a87b;
     padding: 3rem 0 1.5rem;
 }
 
@@ -346,7 +349,7 @@ footer {
 }
 
 .footer-col h4 {
-    color: white;
+    color: #D2B48C;
     margin-bottom: 1rem;
 }
 
@@ -359,12 +362,12 @@ footer {
 }
 
 .footer-col ul li a {
-    color: #94a3b8;
+    color: #c9a87b;
     text-decoration: none;
 }
 
 .footer-col ul li a:hover {
-    color: #3b82f6;
+    color: #D2B48C;
 }
 
 .social-icons-footer {
@@ -407,11 +410,31 @@ footer {
     transform: scale(1.07);
 }
 
+.footer-tiktok {
+    background: #000000;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-tiktok:hover {
+    transform: scale(1.07);
+    background: #161616;
+}
+
 .copyright {
     text-align: center;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid #5c2d0a;
     padding-top: 1.5rem;
     font-size: 0.8rem;
+    color: #c9a87b;
 }
 
 /* MODAL */
@@ -504,7 +527,7 @@ footer {
 }
 
 .thumbnail-item.active img {
-    border-color: #3b82f6;
+    border-color: #8B4513;
 }
 
 .thumbnail-item span {
@@ -517,6 +540,7 @@ footer {
 .modal-header h2 {
     font-size: 1.6rem;
     margin-bottom: 0.3rem;
+    color: #3b1e0a;
 }
 
 .modal-rating {
@@ -529,7 +553,15 @@ footer {
 .modal-price {
     font-size: 1.8rem;
     font-weight: 800;
-    color: #3b82f6;
+    color: #8B4513;
+}
+
+.modal-price-label {
+    color: #64748b;
+}
+
+.modal-installment {
+    color: #64748b;
 }
 
 .size-options {
@@ -550,8 +582,9 @@ footer {
 }
 
 .size-btn.active {
-    background: #3b82f6;
+    background: #8B4513;
     color: white;
+    border-color: #8B4513;
 }
 
 .btn-whatsapp-modal {
@@ -589,7 +622,7 @@ footer {
 }
 
 .benefit-item i {
-    color: #10b981;
+    color: #8B4513;
 }
 
 /* ALERTA PERSONALIZADO */
@@ -636,7 +669,7 @@ footer {
 .custom-alert h4 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #1e293b;
+    color: #3b1e0a;
 }
 
 .custom-alert p {
@@ -646,7 +679,7 @@ footer {
 }
 
 .alert-btn {
-    background: #3b82f6;
+    background: #8B4513;
     border: none;
     padding: 0.6rem 1.5rem;
     border-radius: 40px;
@@ -657,7 +690,7 @@ footer {
 }
 
 .alert-btn:hover {
-    background: #2563eb;
+    background: #5c2d0a;
 }
 
 /* ÍCONES FLUTUANTES */
@@ -681,33 +714,13 @@ footer {
     color: white;
 }
 
-.instagram-float {
-    position: fixed;
-    bottom: 85px;
-    right: 20px;
-    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 99;
-    text-decoration: none;
-}
-
-.instagram-float i {
-    font-size: 1.8rem;
-    color: white;
-}
-
 /* RESPONSIVIDADE */
 @media (max-width: 800px) {
     .nav-links {
         display: none;
         width: 100%;
         flex-direction: column;
-        background: #0f172a;
+        background: #3b1e0a;
         padding: 1rem;
         margin-top: 1rem;
         border-radius: 12px;
@@ -776,23 +789,4 @@ footer {
     .price {
         font-size: 0.9rem;
     }
-}
-
-.footer-tiktok {
-    background: #000000;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.4rem;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.footer-tiktok:hover {
-    transform: scale(1.07);
-    background: #161616;
 }
