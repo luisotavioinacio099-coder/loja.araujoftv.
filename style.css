@@ -17,7 +17,7 @@ body {
     padding: 0 24px;
 }
 
-/* ========== NAVBAR ========== */
+/* NAVBAR */
 .navbar {
     background: #0f172a;
     padding: 1rem 0;
@@ -67,7 +67,7 @@ body {
     cursor: pointer;
 }
 
-/* ========== HERO ========== */
+/* HERO */
 .hero {
     background-image: url('images/foto.capa.jpeg');
     background-size: cover;
@@ -144,7 +144,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* ========== PRODUTOS ========== */
+/* PRODUTOS */
 .section {
     padding: 4rem 0;
 }
@@ -211,7 +211,7 @@ body {
     color: #3b82f6;
 }
 
-/* ========== SOBRE NÓS ========== */
+/* SOBRE */
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -224,34 +224,7 @@ body {
     color: #475569;
 }
 
-.about-mission {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-}
-
-.mission-item {
-    background: #f1f5f9;
-    padding: 1.5rem;
-    border-radius: 16px;
-    text-align: center;
-    flex: 1;
-    min-width: 200px;
-}
-
-.mission-item i {
-    font-size: 2rem;
-    color: #3b82f6;
-    margin-bottom: 0.5rem;
-}
-
-.mission-item h4 {
-    margin-bottom: 0.5rem;
-}
-
-/* ========== POLÍTICAS ========== */
+/* POLÍTICAS */
 .policies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -287,7 +260,7 @@ body {
     line-height: 1.5;
 }
 
-/* ========== BANNER ========== */
+/* BANNER */
 .banner-full-width {
     width: 100%;
     background: #0f172a;
@@ -333,7 +306,7 @@ body {
     border-radius: 20px;
 }
 
-/* ========== DEPOIMENTOS ========== */
+/* DEPOIMENTOS */
 .testimonials {
     display: flex;
     flex-wrap: wrap;
@@ -357,7 +330,7 @@ body {
     font-weight: 700;
 }
 
-/* ========== FOOTER ========== */
+/* FOOTER */
 footer {
     background: #0f172a;
     color: #94a3b8;
@@ -441,7 +414,7 @@ footer {
     font-size: 0.8rem;
 }
 
-/* ========== MODAL ========== */
+/* MODAL */
 .modal {
     display: none;
     position: fixed;
@@ -534,8 +507,23 @@ footer {
     border-color: #3b82f6;
 }
 
+.thumbnail-item span {
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 0.3rem;
+    color: #64748b;
+}
+
 .modal-header h2 {
     font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.modal-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .modal-price {
@@ -547,6 +535,7 @@ footer {
 .size-options {
     display: flex;
     gap: 0.8rem;
+    flex-wrap: wrap;
     margin: 1rem 0;
 }
 
@@ -569,5 +558,222 @@ footer {
     background: #25D366;
     border: none;
     width: 100%;
-    padding: 0.9;
+    padding: 0.9rem;
+    border-radius: 40px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.btn-whatsapp-modal:hover {
+    background: #1da05a;
+}
+
+.modal-benefits {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-item i {
+    color: #10b981;
+}
+
+/* ALERTA PERSONALIZADO */
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.custom-alert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.alert-icon {
+    width: 60px;
+    height: 60px;
+    background: #fee2e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+}
+
+.alert-icon i {
+    font-size: 2rem;
+    color: #ef4444;
+}
+
+.custom-alert h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+
+.custom-alert p {
+    color: #475569;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.alert-btn {
+    background: #3b82f6;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 40px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.alert-btn:hover {
+    background: #2563eb;
+}
+
+/* ÍCONES FLUTUANTES */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    text-decoration: none;
+}
+
+.whatsapp-float i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.instagram-float {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    text-decoration: none;
+}
+
+.instagram-float i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background: #0f172a;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 12px;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+    
+    .hero-container {
+        min-height: 400px;
+        padding: 2rem 24px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .modal-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .banner-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-icons-footer {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .product-img {
+        height: 180px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-img {
+        height: 150px;
+    }
+    
+    .product-name {
+        font-size: 0.85rem;
+    }
+    
+    .price {
+        font-size: 0.9rem;
+    }
 }
