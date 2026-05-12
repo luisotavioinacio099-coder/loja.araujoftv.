@@ -71,7 +71,7 @@ body {
 .hero {
     background-image: url('images/bg branco.jpeg');
     background-size: cover;
-    background-position: center 23%;
+    background-position: 90% 23%;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
