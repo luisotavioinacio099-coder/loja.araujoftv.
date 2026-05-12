@@ -67,11 +67,11 @@ body {
     cursor: pointer;
 }
 
-/* HERO - COM IMAGEM DESLOCADA PARA A DIREITA */
+/* HERO - IMAGEM TOTALMENTE À DIREITA */
 .hero {
     background-image: url('images/bg branco.jpeg');
-    background-size: cover;
-    background-position: 90% center;
+    background-size: contain;
+    background-position: right center;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
@@ -100,7 +100,9 @@ body {
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 550px;
+    position: relative;
+    z-index: 3;
 }
 
 .hero-content h1 {
@@ -811,6 +813,10 @@ footer {
     
     .hero-content h1 {
         font-size: 1.8rem;
+    }
+    
+    .hero-content {
+        max-width: 100%;
     }
     
     .modal-grid {
