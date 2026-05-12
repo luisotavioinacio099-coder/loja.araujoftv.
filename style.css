@@ -67,11 +67,11 @@ body {
     cursor: pointer;
 }
 
-/* HERO - IMAGEM TOTALMENTE À DIREITA */
+/* HERO - IMAGEM OCUPA TODA TELA, HOMEM À DIREITA */
 .hero {
     background-image: url('images/bg branco.jpeg');
-    background-size: contain;
-    background-position: right center;
+    background-size: cover;
+    background-position: 85% center;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
