@@ -68,10 +68,11 @@ body {
 }
 
 /* HERO */
+/* HERO */
 .hero {
     background-image: url('images/bg branco.jpeg');
     background-size: cover;
-    background-position: right 23%;
+    background-position: 70% center;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
