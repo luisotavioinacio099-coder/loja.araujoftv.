@@ -133,18 +133,7 @@ function enviarWhatsApp(nomeProduto, preco, tamanho) {
     const data = new Date();
     const dataFormatada = data.toLocaleDateString('pt-BR');
     const hora = data.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
-    
-    let mensagem = `🏐 *NOVO PEDIDO - ARAUJO FUTVOLEI* 🏐%0A%0A`;
-    mensagem += `*PRODUTO:* ${nomeProduto}%0A`;
-    mensagem += `*PREÇO:* R$ ${preco}%0A`;
-    mensagem += `*TAMANHO:* ${tamanho || 'Não selecionado'}%0A`;
-    mensagem += `*DATA:* ${dataFormatada} às ${hora}%0A%0A`;
-    mensagem += `*ENTREGA:* ✅ Entregamos para todo Brasil%0A`;
-    mensagem += `*PAGAMENTO:* PIX / Cartão / Boleto%0A%0A`;
-    mensagem += `_Mensagem automática - Agradecemos o contato!_ 🏐`;
-    
-    const url = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
-    window.open(url, '_blank');
+   
 }
 
 // Botão WhatsApp no modal
